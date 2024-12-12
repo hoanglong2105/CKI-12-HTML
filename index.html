@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thông Tin Học Sinh</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 900px;
+            margin: 50px auto;
+            background: linear-gradient(145deg, #ffffff, #e6f7ff);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+        h1 {
+            text-align: center;
+            color: #007acc;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        .info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid #007acc;
+            padding-bottom: 15px;
+            margin-bottom: 20px;
+        }
+        .info p {
+            font-size: 18px;
+            margin: 5px 0;
+        }
+        .profile-image {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 4px solid #007acc;
+        }
+        .profile-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .media-section h2 {
+            text-align: center;
+            color: #007acc;
+            margin-bottom: 15px;
+        }
+        video, audio, img {
+            display: block;
+            margin: 10px auto;
+            max-width: 100%;
+            border-radius: 10px;
+        }
+        .table-section {
+            margin-top: 30px;
+        }
+        .table-section h2 {
+            text-align: center;
+            color: #007acc;
+            margin-bottom: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+            background: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        table th, table td {
+            border: 1px solid #333; /* Viền bên trong các ô */
+        padding: 8px;
+        text-align: left;
+        }
+        table th {
+            background-color: #007acc;
+            color: white;
+            font-weight: bold;
+        }
+        table tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        table tr:hover {
+            background-color: #e6f7ff;
+        }
+        table td {
+            transition: all 0.2s;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Thông Tin Học Sinh</h1>
+        <div class="info">
+            <div>
+                <p><strong>Họ và tên:</strong> Phan Đình Hoàng Long</p>
+                <p><strong>Lớp:</strong> 12 Tin</p>
+            </div>
+            <div class="profile-image">
+                <img src="14.png" alt="Ảnh cá nhân">
+            </div>
+        </div>
+
+        <div class="media-section">
+            <h2>Hình Ảnh</h2>
+            <img src="14.png" alt="Hình minh họa">
+
+            <h2>Audio</h2>
+            <audio controls>
+                <source src="nhovehanoi.mp3" type="audio/mp3">
+            </audio>
+
+            <h2>Video</h2>
+            <video controls>
+                <source src="nhovehanoi.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <div class="table-section">
+            <h2>Danh Sách Học Sinh Lớp 12 Tin</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>STT</th>
+                        <th>Họ tên</th>
+                        <th>Ngày sinh</th>
+                        <th>Giới tính</th>
+                        <th>Địa chỉ</th>
+                        <th>Số điện thoại</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>1</td><td>Hoàng Nguyên Anh</td><td>29/11/2007</td><td>Nữ</td><td>24A/131-Trần Phú</td><td>0935039559</td></tr>
+                    <tr><td>2</td><td>Hồ Lương Thế Anh</td><td>22/11/2007</td><td>Nam</td><td>Ngõ 7, K86, Lê Ngô Cát, P. Thủy Xuân</td><td>0333048422</td></tr>
+                    <tr><td>3</td><td>Nguyễn Nguyễn Gia Bảo</td><td>05/03/2007</td><td>Nam</td><td>101 Dương Văn An</td><td>0702499669</td></tr>
+                    <tr><td>4</td><td>Nguyễn Công Dũng</td><td>05/05/2007</td><td>Nam</td><td>TDP Tây Thượng, phường Phú Thượng, TP Huế, TT Huế</td><td>0367575190</td></tr>
+                    <tr><td>5</td><td>Nguyễn Văn Lê Dũng</td><td>19/07/2007</td><td>Nam</td><td>18 Chế Lan Viên</td><td>0941885885</td></tr>
+                    <tr><td>6</td><td>Thái Đặng Trần Hiếu</td><td>22/08/2007</td><td>Nam</td><td>57 Thân Văn Nhiếp</td><td>0356618807</td></tr>
+                    <tr><td>7</td><td>Lê Quang Hoàng</td><td>08/04/2007</td><td>Nam</td><td>An Lỗ,Phong Hiền,Phong Điền,TTHuế</td><td>0353324607</td></tr>
+                    <tr><td>8</td><td>Hoàng Trần Gia Huy</td><td>08/06/2007</td><td>Nam</td><td>102 Nguyễn Kim Thành, Thị Trấn Sịa</td><td>0398730562</td></tr>
+                    <tr><td>9</td><td>Trần Thiên Nhật Huy</td><td>17/09/2007</td><td>Nam</td><td>Nam Thượng- phú Thượng- TP Huế</td><td>0969485547</td></tr>
+                    <tr><td>10</td><td>Hà Nguyễn Thảo Huyền</td><td>11/11/2007</td><td>Nữ</td><td>16/21 Nguyễn Phúc Thụ</td><td>0896401164</td></tr>
+                    <tr><td>11</td><td>Nguyễn Thúc Trung Kiên</td><td>19/06/2007</td><td>Nam</td><td>2/325 Nguyễn Sinh Cung</td><td>0972253651</td></tr>
+                    <tr><td>12</td><td>Lê Văn Tuấn Kiệt</td><td>09/02/2007</td><td>Nam</td><td>Gio Linh- Quảng Trị</td><td>0877067183</td></tr>
+                    <tr><td>13</td><td>Lê Thanh Nhã Kỳ</td><td>28/09/2007</td><td>Nữ</td><td>18 Đỗ Xuân Hợp- Phú Bài</td><td>0827985286</td></tr>
+                    <tr><td>14</td><td>Phan Đình Hoàng Long</td><td>21/05/2007</td><td>Nam</td><td>1/323 Tăng Bạt Hổ, Thuận lộc, TP Huế</td><td>0786735452</td></tr>
+                    <tr><td>15</td><td>Đồng Lê Đức Minh</td><td>21/11/2007</td><td>Nam</td><td>14/73A Nguyễn Hữu Cảnh, Phường An Tây, TP Huế</td><td>0932428329</td></tr>
+                    <tr><td>16</td><td>Hồ Hữu Nhật Minh</td><td>08/02/2007</td><td>Nam</td><td>82 Trần Nguyên Đán</td><td>0886353455</td></tr>
+                    <tr><td>17</td><td>Nguyễn Tấn Minh</td><td>24/09/2007</td><td>Nam</td><td>6/1/128 Nguyễn Khoa Chiêm</td><td>0934843173</td></tr>
+                    <tr><td>18</td><td>Nguyễn Xuân Nguyên</td><td>12/12/2007</td><td>Nam</td><td>16 Trương Gia Mô</td><td>0858755158</td></tr>
+                    <tr><td>19</td><td>Lê Thiện Nhân</td><td>04/03/2007</td><td>Nam</td><td>24/1 Phạm THị Liên</td><td>0914362425</td></tr>
+                    <tr><td>20</td><td>Nguyễn Phan Minh Nhật</td><td>18/05/2007</td><td>Nam</td><td>401B2-Chung cư Xuân Phú</td><td>0816183834</td></tr>
+                    <tr><td>21</td><td>Trần Đức Minh Nhật</td><td>08/03/2007</td><td>Nam</td><td>1128 Nguyễn Tất Thành - Phú bài</td><td>0889034119</td></tr>
+                    <tr><td>22</td><td>Trần Nữ Ngọc Nhi</td><td>16/03/2007</td><td>Nữ</td><td>Tứ Hạ - Hương Trà - Thừa Thiên Huế</td><td>0852413069</td></tr>
+                    <tr><td>23</td><td>Nguyễn Trí Phúc</td><td>19/02/2007</td><td>Nam</td><td>Lô B5-17 KQH Xuân Phú</td><td>0905542651</td></tr>
+                    <tr><td>24</td><td>Phan Ngọc Thanh Phương</td><td>15/09/2007</td><td>Nữ</td><td>58/271 Chi Lăng</td><td>0896209073</td></tr>
+                    <tr><td>25</td><td>Hoàng Minh Quân</td><td>17/04/2007</td><td>Nam</td><td>5/14 Thánh Gióng</td><td>0905103632</td></tr>
+                    <tr><td>26</td><td>Đỗ Minh Tâm</td><td>24/01/2007</td><td>Nữ</td><td>2 Tam Thai, phường Trường An, TP Huế, TT Huế</td><td>0853435957</td></tr>
+                    <tr><td>27</td><td>Nguyễn Phương Thi</td><td>20/10/2007</td><td>Nữ</td><td>93 kiệt 1 Hoàng Quốc Việt</td><td>0787558040</td></tr>
+                    <tr><td>28</td><td>Lê Bảo Anh Thư</td><td>13/10/2007</td><td>Nữ</td><td>Tổ 1 , KV 1 Hương Sơ Huế</td><td>0335268265</td></tr>
+                    <tr><td>29</td><td>Thái Nguyễn Thùy Trang</td><td>26/10/2007</td><td>Nữ</td><td>2/300 Lý Nam Đế</td><td>0343057033</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
